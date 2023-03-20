@@ -6284,6 +6284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
+  moveSpeed: 5
   groundCheck: {fileID: 2059190689}
   groundCheckRadius: 0.6
   groundLayer:
@@ -6387,6 +6388,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1560378042905311716, guid: e273e0fa85b1453408d21e9cd7f92c00,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.037256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560378042905311716, guid: e273e0fa85b1453408d21e9cd7f92c00,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.001535058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560378042905311720, guid: e273e0fa85b1453408d21e9cd7f92c00,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560378042905311720, guid: e273e0fa85b1453408d21e9cd7f92c00,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1560378042905311721, guid: e273e0fa85b1453408d21e9cd7f92c00,
         type: 3}
       propertyPath: m_RootOrder
@@ -6395,12 +6416,12 @@ PrefabInstance:
     - target: {fileID: 1560378042905311721, guid: e273e0fa85b1453408d21e9cd7f92c00,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.74
+      value: -5.683
       objectReference: {fileID: 0}
     - target: {fileID: 1560378042905311721, guid: e273e0fa85b1453408d21e9cd7f92c00,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6796
+      value: -2.601
       objectReference: {fileID: 0}
     - target: {fileID: 1560378042905311721, guid: e273e0fa85b1453408d21e9cd7f92c00,
         type: 3}
