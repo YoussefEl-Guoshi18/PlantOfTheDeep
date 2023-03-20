@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class DoorOpen : MonoBehaviour
 {
     // Start is called before the first frame update
+    bool enterNextScene = false;
+
     void Start()
     {
         
@@ -14,13 +16,16 @@ public class DoorOpen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (enterNextScene == true && Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene("P1");
+        }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("P1");
+           enterNextScene = true;
         }
     }
 
