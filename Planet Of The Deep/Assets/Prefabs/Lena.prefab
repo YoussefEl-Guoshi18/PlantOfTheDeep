@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1560378042905311722}
   - component: {fileID: 1560378042905311723}
   - component: {fileID: 1560378042905311716}
-  - component: {fileID: 1560378042905311717}
+  - component: {fileID: 1546026559}
   m_Layer: 11
   m_Name: Lena
   m_TagString: Player
@@ -161,7 +161,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8625612, y: 2.0653152}
   m_EdgeRadius: 0
---- !u!114 &1560378042905311717
+--- !u!114 &1546026559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,8 +173,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a664a1b68d9f83b438e7a8a2b54b8708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   jumpForce: 10
+  moveSpeed: 5
+  groundCheck: {fileID: 1560378044667392676}
+  groundCheckRadius: 0.6
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 4096
+  isGrounded: 0
 --- !u!1 &1560378043137822569
 GameObject:
   m_ObjectHideFlags: 0

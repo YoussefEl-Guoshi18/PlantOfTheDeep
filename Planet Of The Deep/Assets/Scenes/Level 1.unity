@@ -6265,6 +6265,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &1546026552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1560378042905311727, guid: e273e0fa85b1453408d21e9cd7f92c00,
@@ -6291,6 +6292,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   isGrounded: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1575050705
 GameObject:
   m_ObjectHideFlags: 0
@@ -6375,12 +6378,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2059190689 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1560378044667392676, guid: e273e0fa85b1453408d21e9cd7f92c00,
-    type: 3}
-  m_PrefabInstance: {fileID: 1560378044055115084}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1560378044055115084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6468,8 +6465,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lena
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1560378042905311717, guid: e273e0fa85b1453408d21e9cd7f92c00, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e273e0fa85b1453408d21e9cd7f92c00, type: 3}
 --- !u!1001 &3308581376732097536
 PrefabInstance:
