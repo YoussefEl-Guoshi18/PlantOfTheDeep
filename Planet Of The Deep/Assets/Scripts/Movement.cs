@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
 
     private Rigidbody2D rb;
     public bool isGrounded;
+    public Animator anim;
 
 
     private void Start()
@@ -37,6 +38,15 @@ public class Movement : MonoBehaviour
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+        }
+
+        if (moveInput == 0)
+        {
+            anim.SetBool("isWalking", false);
+        }
+        else
+        {
+            anim.SetBool("isWalking", true);
         }
     }
 

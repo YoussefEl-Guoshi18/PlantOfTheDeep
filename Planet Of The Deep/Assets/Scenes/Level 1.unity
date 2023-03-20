@@ -6291,6 +6291,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   isGrounded: 0
+  anim: {fileID: 1546026562}
+--- !u!95 &1546026562 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1560378042905311722, guid: e273e0fa85b1453408d21e9cd7f92c00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1560378044055115084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1575050705
 GameObject:
   m_ObjectHideFlags: 0
