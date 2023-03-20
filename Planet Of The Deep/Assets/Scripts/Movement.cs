@@ -1,53 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement: MonoBehaviour
 {
-    public float moveSpeed = 5f;
     public float jumpForce = 10f;
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.1f;
+    public LayerMask groundLayer;
 
     private Rigidbody2D rb;
-    private bool isGrounded = false;
+    public bool isGrounded;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate()
+    private void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+        // Check if the player is on the ground
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Move player horizontally
-        Vector2 movement = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
-        rb.velocity = movement;
-
-        // Flip player sprite depending on movement direction
-        if (horizontalInput < 0)
+        if (isGrounded && Input.GetButtonDown("Jump"))
         {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-        else if (horizontalInput > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-
-        // Check if player is on the ground
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.1f);
-        if (hit.collider != null)
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-
-        // Jump when player presses the Jump button and is on the ground
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
     }
 }
