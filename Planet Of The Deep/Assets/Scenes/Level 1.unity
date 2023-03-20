@@ -6271,12 +6271,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1560378044055115084}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1546026558 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1560378042905311721, guid: e273e0fa85b1453408d21e9cd7f92c00,
-    type: 3}
-  m_PrefabInstance: {fileID: 1560378044055115084}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1546026559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6290,8 +6284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
-  groundCheck: {fileID: 1546026558}
-  groundCheckRadius: 0.11
+  groundCheck: {fileID: 2059190689}
+  groundCheckRadius: 0.6
   groundLayer:
     serializedVersion: 2
     m_Bits: 4096
@@ -6380,6 +6374,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2059190689 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1560378044667392676, guid: e273e0fa85b1453408d21e9cd7f92c00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1560378044055115084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1560378044055115084
 PrefabInstance:
   m_ObjectHideFlags: 0
