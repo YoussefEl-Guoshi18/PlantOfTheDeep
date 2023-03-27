@@ -32321,6 +32321,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lena
       objectReference: {fileID: 0}
+    - target: {fileID: 1560378043137822571, guid: e273e0fa85b1453408d21e9cd7f92c00,
+        type: 3}
+      propertyPath: orthographic size
+      value: 3.898228
+      objectReference: {fileID: 0}
     - target: {fileID: 1560378043605408053, guid: e273e0fa85b1453408d21e9cd7f92c00,
         type: 3}
       propertyPath: m_SortingOrder

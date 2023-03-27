@@ -9320,6 +9320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lena
       objectReference: {fileID: 0}
+    - target: {fileID: 1560378043137822571, guid: e273e0fa85b1453408d21e9cd7f92c00,
+        type: 3}
+      propertyPath: orthographic size
+      value: 4.135707
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e273e0fa85b1453408d21e9cd7f92c00, type: 3}
 --- !u!1 &2107766727
