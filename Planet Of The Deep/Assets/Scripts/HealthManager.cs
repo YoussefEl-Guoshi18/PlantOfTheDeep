@@ -9,7 +9,8 @@ public class HealthManager : MonoBehaviour
 {
     public Text healthText;
     public static int currentHealth = 5;
-    public float invincibilityDuration = 2f; 
+    public float defaultInvincibilityDuration = 2f;
+    public float poisonInvincibilityDuration = 0.5f;
     private bool isInvincible = false; 
     private float invincibilityTimer = 0f;
 
@@ -40,20 +41,23 @@ public class HealthManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            TakeDamage();
+            TakeDamage(defaultInvincibilityDuration);
+        }
+        if (other.gameObject.tag == "Poison")
+        {
+            TakeDamage(poisonInvincibilityDuration);
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float invincibilityDuration)
     {
-        // If not currently invincible, take damage and trigger invincibility frames
         if (!isInvincible)
         {
             currentHealth--;
             UpdateHealth();
 
             isInvincible = true;
-            invincibilityTimer = invincibilityDuration;
+            this.invincibilityTimer = invincibilityDuration;
         }
     }
 
@@ -61,4 +65,6 @@ public class HealthManager : MonoBehaviour
     {
         healthText.text = "Health: " + currentHealth;
     }
+
+
 }
