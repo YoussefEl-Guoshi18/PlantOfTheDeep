@@ -1,19 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
     public Text healthText;
-    public int currentHealth = 5;
+    public static int currentHealth = 5;
     public float invincibilityDuration = 2f; 
     private bool isInvincible = false; 
-    private float invincibilityTimer = 0f; 
+    private float invincibilityTimer = 0f;
+
 
     void Start()
     {
         UpdateHealth();
+
     }
 
     void Update()
