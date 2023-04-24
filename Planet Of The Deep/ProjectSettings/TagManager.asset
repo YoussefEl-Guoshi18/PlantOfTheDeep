@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Poison
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - The Being
   - Floater
   - Player
-  - 
+  - Ground
   - 
   - 
   - 
@@ -38,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Player
+    uniqueID: 1400572053
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
