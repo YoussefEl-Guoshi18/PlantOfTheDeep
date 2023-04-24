@@ -26,6 +26,7 @@ public class KillEnemy : MonoBehaviour
             bc = enemy.GetComponent<BoxCollider2D>();
             bc.enabled = false;
             this.GetComponent<BoxCollider2D>().enabled = false;
+            enemy.GetComponent<Rigidbody2D>().gravityScale = 1;
 
         }
     }
