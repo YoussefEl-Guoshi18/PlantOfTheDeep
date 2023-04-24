@@ -4,7 +4,9 @@ public class EnemyMovement : MonoBehaviour
 {
     public float speed = 2f; 
     public float leftBound = -3f; 
-    public float rightBound = 3f; 
+    public float rightBound = 3f;
+    public float scaleX = 0.2f;
+    public float scaleY = 0.2f;
 
     private bool isMovingRight = true; 
 
@@ -15,12 +17,12 @@ public class EnemyMovement : MonoBehaviour
         if (isMovingRight)
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
-            transform.localScale = new Vector2(1,1);
+            transform.localScale = new Vector2(scaleX,scaleY);
         }
         else
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(-scaleX, scaleY);
         }
 
         
