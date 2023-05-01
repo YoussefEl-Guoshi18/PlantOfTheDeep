@@ -6,11 +6,11 @@ public class KillEnemy : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject enemy;
-    BoxCollider2D bc;
+    HealthManager healthManager;
 
     void Start()
     {
-        
+        healthManager = FindObjectOfType<HealthManager>();
     }
 
     // Update is called once per frame
@@ -23,10 +23,14 @@ public class KillEnemy : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            bc = enemy.GetComponent<BoxCollider2D>();
-            bc.enabled = false;
+            
+            enemy.GetComponent<BoxCollider2D>().enabled = false;
             this.GetComponent<BoxCollider2D>().enabled = false;
             enemy.GetComponent<Rigidbody2D>().gravityScale = 1;
+            if (this.CompareTag("Kill"))
+            {
+                healthManager.AddHealth();
+            }
 
         }
     }

@@ -61,9 +61,17 @@ public class HealthManager : MonoBehaviour
         }
     }
 
+
+
     void UpdateHealth()
     {
         healthText.text = "Health: " + currentHealth;
+    }
+
+    public void AddHealth()
+    {
+        currentHealth++;
+        UpdateHealth();
     }
 
 
