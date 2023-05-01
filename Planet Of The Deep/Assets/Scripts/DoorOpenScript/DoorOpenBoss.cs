@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Globalization;
 
 public class DoorOpenBoss : MonoBehaviour
 {
     bool enterNextScene = false;
+    public Text lockedMessage;
     KeyCardManager keycardManager;
     // Start is called before the first frame update
 
@@ -21,6 +24,10 @@ public class DoorOpenBoss : MonoBehaviour
             {
                 enterNextScene = true;
             }
+            else
+            {
+                StartCoroutine(ShowLockedMessage());
+            }
         }
     }
 
@@ -33,5 +40,10 @@ public class DoorOpenBoss : MonoBehaviour
         }
     }
 
-
+    IEnumerator ShowLockedMessage()
+    {
+        lockedMessage.text = "LOCKED";
+        yield return new WaitForSeconds(1.5f);
+        lockedMessage.text = "";
+    }
 }
