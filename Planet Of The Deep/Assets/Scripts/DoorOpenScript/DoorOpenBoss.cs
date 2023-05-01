@@ -6,17 +6,21 @@ using UnityEngine.SceneManagement;
 public class DoorOpenBoss : MonoBehaviour
 {
     bool enterNextScene = false;
-
+    KeyCardManager keycardManager;
     // Start is called before the first frame update
+
     void Start()
     {
-
+        keycardManager = FindObjectOfType<KeyCardManager>();
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            enterNextScene = true;
+            if (keycardManager.keycardCollect >= 4)
+            {
+                enterNextScene = true;
+            }
         }
     }
 

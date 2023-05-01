@@ -6486,6 +6486,50 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.22, y: 2.88}
   m_EdgeRadius: 0
+--- !u!1 &1220692807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220692809}
+  - component: {fileID: 1220692808}
+  m_Layer: 0
+  m_Name: KeyCardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1220692808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220692807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f29f4c82987b3459cd0f2163e43ea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keycardCollect: 0
+--- !u!4 &1220692809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220692807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.1758766, y: 1.7062174, z: -139.68062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1341247043 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3668853111310088008, guid: f8364fcb7b81ceb4ebe413d0d1b38d98,
@@ -6509,6 +6553,7 @@ GameObject:
   - component: {fileID: 1505145224}
   - component: {fileID: 1505145223}
   - component: {fileID: 1505145225}
+  - component: {fileID: 1505145226}
   m_Layer: 0
   m_Name: Keycard 1
   m_TagString: KeyCard
@@ -6591,7 +6636,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000009536743, y: -0.025097758}
@@ -6607,6 +6652,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.036858, y: 1.9827368}
   m_EdgeRadius: 0
+--- !u!114 &1505145226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505145222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d10fed28066a924cb1708d9737d9c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1575050705
 GameObject:
   m_ObjectHideFlags: 0

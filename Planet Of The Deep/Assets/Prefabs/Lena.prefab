@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1560378042905311722}
   - component: {fileID: 1560378042905311723}
   - component: {fileID: 1560378042905311716}
-  - component: {fileID: 1546026559}
   - component: {fileID: 7507989932557539560}
   - component: {fileID: 1792626046}
   m_Layer: 11
@@ -160,27 +159,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8625612, y: 2.037256}
   m_EdgeRadius: 0
---- !u!114 &1546026559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560378042905311727}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a664a1b68d9f83b438e7a8a2b54b8708, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 10
-  moveSpeed: 5
-  groundCheck: {fileID: 1560378044667392676}
-  groundCheckRadius: 0.6
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 4096
-  isGrounded: 0
-  anim: {fileID: 0}
 --- !u!114 &7507989932557539560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,8 +193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 0}
-  currentHealth: 5
-  invincibilityDuration: 2
+  defaultInvincibilityDuration: 2
+  poisonInvincibilityDuration: 0.5
 --- !u!1 &1560378043137822569
 GameObject:
   m_ObjectHideFlags: 0
