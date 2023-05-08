@@ -199,7 +199,7 @@ PrefabInstance:
     - target: {fileID: 817703179442550795, guid: 0593e860b8b4d184dab173f725b6c1ab,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.948303
+      value: 19.44
       objectReference: {fileID: 0}
     - target: {fileID: 817703179442550795, guid: 0593e860b8b4d184dab173f725b6c1ab,
         type: 3}
@@ -250,6 +250,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ravanger 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 817703180937630562, guid: 0593e860b8b4d184dab173f725b6c1ab,
+        type: 3}
+      propertyPath: leftBound
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 817703180937630562, guid: 0593e860b8b4d184dab173f725b6c1ab,
+        type: 3}
+      propertyPath: rightBound
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0593e860b8b4d184dab173f725b6c1ab, type: 3}
@@ -8960,12 +8970,12 @@ PrefabInstance:
     - target: {fileID: 1560378042905311721, guid: e273e0fa85b1453408d21e9cd7f92c00,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.74
+      value: -7.1
       objectReference: {fileID: 0}
     - target: {fileID: 1560378042905311721, guid: e273e0fa85b1453408d21e9cd7f92c00,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6796
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1560378042905311721, guid: e273e0fa85b1453408d21e9cd7f92c00,
         type: 3}
