@@ -6683,6 +6683,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lena
       objectReference: {fileID: 0}
+    - target: {fileID: 1560378043137822571, guid: e273e0fa85b1453408d21e9cd7f92c00,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.2784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560378043137822571, guid: e273e0fa85b1453408d21e9cd7f92c00,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.2784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560378043137822571, guid: e273e0fa85b1453408d21e9cd7f92c00,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.2784314
+      objectReference: {fileID: 0}
     - target: {fileID: 7507989932557539560, guid: e273e0fa85b1453408d21e9cd7f92c00,
         type: 3}
       propertyPath: jumpForce
