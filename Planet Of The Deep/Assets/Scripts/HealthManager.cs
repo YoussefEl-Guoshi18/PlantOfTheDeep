@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Runtime.InteropServices;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -55,6 +56,11 @@ public class HealthManager : MonoBehaviour
         {
             currentHealth--;
             UpdateHealth();
+
+            if (currentHealth <= 0)
+            {
+                SceneManager.LoadScene("YOU LOSE");
+            }
 
             isInvincible = true;
             this.invincibilityTimer = invincibilityDuration;
