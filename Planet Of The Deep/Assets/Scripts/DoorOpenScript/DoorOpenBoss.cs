@@ -10,6 +10,8 @@ public class DoorOpenBoss : MonoBehaviour
     bool enterNextScene = false;
     public Text lockedMessage;
     KeyCardManager keycardManager;
+
+    private AudioSource audioSource;
     // Start is called before the first frame update
 
     void Start()
@@ -36,6 +38,8 @@ public class DoorOpenBoss : MonoBehaviour
     {
         if (enterNextScene == true && Input.GetKeyDown(KeyCode.Return))
         {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.Play();
             SceneManager.LoadScene("Boss");
         }
     }

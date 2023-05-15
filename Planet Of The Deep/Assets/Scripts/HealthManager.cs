@@ -16,7 +16,7 @@ public class HealthManager : MonoBehaviour
     private float invincibilityTimer = 0f;
 
     public AudioSource audioSource;
-    [SerializeField] AudioClip Lena_Hurt, Death_SoundPlayer;
+    [SerializeField] AudioClip Lena_Hurt, Death_SoundPlayer, Poison;
 
 
     void Start()
@@ -51,6 +51,8 @@ public class HealthManager : MonoBehaviour
         }
         if (other.gameObject.tag == "Poison")
         {
+            audioSource.clip = Poison;
+            audioSource.Play();
             TakeDamage(poisonInvincibilityDuration);
         }
     }

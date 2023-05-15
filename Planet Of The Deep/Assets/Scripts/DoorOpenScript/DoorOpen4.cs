@@ -7,6 +7,8 @@ public class DoorOpen4 : MonoBehaviour
 {
     // Start is called before the first frame update
     bool enterNextScene = false;
+    private AudioSource audioSource;
+
 
     void Start()
     {
@@ -25,6 +27,8 @@ public class DoorOpen4 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.Play();
             enterNextScene = true;
         }
     }

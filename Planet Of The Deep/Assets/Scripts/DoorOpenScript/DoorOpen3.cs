@@ -7,6 +7,7 @@ public class DoorOpen3 : MonoBehaviour
 {
     // Start is called before the first frame update
     bool enterNextScene = false;
+    private AudioSource audioSource;
 
     void Start()
     {
@@ -25,6 +26,8 @@ public class DoorOpen3 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.Play();
             enterNextScene = true;
         }
     }
