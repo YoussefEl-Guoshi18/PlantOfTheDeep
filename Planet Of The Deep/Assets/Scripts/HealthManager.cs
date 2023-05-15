@@ -15,6 +15,9 @@ public class HealthManager : MonoBehaviour
     private bool isInvincible = false; 
     private float invincibilityTimer = 0f;
 
+    public AudioSource audioSource;
+    [SerializeField] AudioClip Lena_Hurt, Death_SoundPlayer;
+
 
     void Start()
     {
@@ -42,6 +45,8 @@ public class HealthManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
+            audioSource.clip = Lena_Hurt;
+            audioSource.Play();
             TakeDamage(defaultInvincibilityDuration);
         }
         if (other.gameObject.tag == "Poison")
@@ -59,6 +64,8 @@ public class HealthManager : MonoBehaviour
 
             if (currentHealth <= 0)
             {
+                audioSource.clip = Death_SoundPlayer;
+                audioSource.Play();
                 SceneManager.LoadScene("YOU LOSE");
             }
 

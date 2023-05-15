@@ -12,6 +12,9 @@ public class Movement : MonoBehaviour
     public bool isGrounded;
     public Animator anim;
 
+    public AudioSource audioSource2;
+    [SerializeField] AudioClip Jump;
+
 
 
     private void Start()
@@ -38,6 +41,18 @@ public class Movement : MonoBehaviour
 
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
+            
+            audioSource2 = GetComponent<AudioSource>();
+            audioSource2.clip = Jump;
+            if (audioSource2 == null)
+            {
+                Debug.LogError("Could not play audio");
+            }
+            else
+            {
+                
+                audioSource2.Play();
+            }
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
 
